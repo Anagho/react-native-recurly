@@ -11,8 +11,10 @@ export default {
     newArchEnabled: true,
     ios: {
       supportsTablet: true,
+      bundleIdentifier: "com.oresx.recurrly",
     },
     android: {
+      package: "com.oresx.recurrly",
       adaptiveIcon: {
         backgroundColor: "#E6F4FE",
         foregroundImage: "./assets/images/android-icon-foreground.png",
@@ -61,6 +63,9 @@ export default {
     extra: {
       posthogProjectToken: process.env.POSTHOG_PROJECT_TOKEN,
       posthogHost: process.env.POSTHOG_HOST,
+      eas: {
+        projectId: "95feee93-3e23-4d36-a64e-403f9ea4ade8",
+      },
     },
   },
 };
