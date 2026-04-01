@@ -80,7 +80,6 @@ const CreateSubscriptionModal = ({
       name: name.trim(),
       price: priceValue,
       currency: "USD",
-      frequency,
       category,
       status: "active",
       startDate: now.toISOString(),
